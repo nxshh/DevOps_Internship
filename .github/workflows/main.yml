@@ -20,9 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: task-01
 
       - name: Run tests
         run: npm test
+        working-directory: task-01
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
@@ -32,6 +34,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app .
+        working-directory: task-01
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app
