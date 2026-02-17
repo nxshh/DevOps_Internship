@@ -1,7 +1,6 @@
-# devops_internship_portfolio# DevOps Internship Portfolio
+## DevOps Internship Portfolio
 
 This repository contains tasks completed during my DevOps internship.
-
 Each task demonstrates practical DevOps concepts such as CI/CD automation, containerization, and deployment workflows using industry tools.
 
 ---
