@@ -2,25 +2,23 @@ pipeline {
     agent any
 
     stages {
-
         stage('Build') {
             steps {
-                sh '''
-                docker run --rm -v $PWD:/app -w /app node:18 npm install
-                '''
+                echo "Installing dependencies..."
+                sh 'docker run --rm -v $PWD:/app -w /app node:18 npm install'
             }
         }
 
         stage('Test') {
             steps {
-                sh '''
-                docker run --rm -v $PWD:/app -w /app node:18 npm test
-                '''
+                echo "Running tests..."
+                sh 'docker run --rm -v $PWD:/app -w /app node:18 npm test'
             }
         }
 
         stage('Deploy') {
             steps {
+                echo "Building Docker image..."
                 sh 'docker build -t nodejs-jenkins-app .'
             }
         }
