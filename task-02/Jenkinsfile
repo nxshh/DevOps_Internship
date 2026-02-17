@@ -6,22 +6,27 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/nxshh/DevOps_Internship.git'
+                git branch: 'main', url: 'https://github.com/nxshh/DevOps_Internship.git'
             }
         }
         stage('Build & Test') {
             steps {
                 sh '''
+                echo "Installing dependencies..."
                 docker run --rm -v $WORKSPACE:/app -w /app node:18 npm install
-                docker run --rm -v $WORKSPACE:/app -w /app node:18 npm test || true
+                echo "Running tests..."
+                docker run --rm -v $WORKSPACE:/app -w /app node:18 npm test
                 '''
             }
         }
         stage('Docker Build & Push') {
             steps {
                 sh '''
+                echo "Building Docker image..."
                 docker build -t $DOCKER_IMAGE .
+                echo "Logging in to Docker Hub..."
                 echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+                echo "Pushing Docker image..."
                 docker push $DOCKER_IMAGE
                 '''
             }
