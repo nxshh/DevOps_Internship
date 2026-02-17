@@ -14,23 +14,6 @@ Automate build and deployment of a Node.js web app using a CI/CD pipeline with G
 
 ---
 
-## 📂 Project Structure
-
-devops_internship_portfolio/
-│
-├── .github/
-│ └── workflows/
-│ └── main.yml
-│
-└── task-01/
-├── app.js
-├── package.json
-├── Dockerfile
-└── README.md
-
-
----
-
 ## ⚙️ CI/CD Workflow
 
 **Workflow file:** `.github/workflows/main.yml`
@@ -49,14 +32,14 @@ devops_internship_portfolio/
 
 ---
 
-## 🐳 Docker Image
+## Docker Image
 
 nxshh/nodejs-demo-app
 
 
 ---
 
-## 🔐 GitHub Secrets
+## GitHub Secrets
 
 DOCKER_USERNAME
 DOCKER_PASSWORD (Docker Hub Access Token)
@@ -64,7 +47,7 @@ DOCKER_PASSWORD (Docker Hub Access Token)
 
 ---
 
-## ▶️ Run Locally
+## Run Locally
 
 ```bash
 npm install
