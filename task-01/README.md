@@ -30,14 +30,11 @@ Automate build and deployment of a Node.js web app using a CI/CD pipeline with G
 6. Build Docker image  
 7. Push image to Docker Hub  
 
----
 
 # Docker Image
 
 nxshh/nodejs-demo-app
 
-
----
 
 # GitHub Secrets
 
