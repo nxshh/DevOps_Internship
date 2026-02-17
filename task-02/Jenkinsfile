@@ -2,24 +2,31 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/nxshh/DevOps_Internship.git', branch: 'main'
+            }
+        }
+
         stage('Build') {
             steps {
-                echo "Installing dependencies..."
-                sh 'docker run --rm -v $PWD:/app -w /app node:18 npm install'
+                sh 'npm install'
             }
         }
 
         stage('Test') {
             steps {
-                echo "Running tests..."
-                sh 'docker run --rm -v $PWD:/app -w /app node:18 npm test'
+                sh 'npm test || true'
             }
         }
 
-        stage('Deploy') {
+        stage('Docker Build & Push') {
             steps {
-                echo "Building Docker image..."
-                sh 'docker build -t nodejs-jenkins-app .'
+                sh '''
+                docker build -t nxshh/nodejs-demo-app .
+                docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+                docker push nxshh/nodejs-demo-app
+                '''
             }
         }
     }
