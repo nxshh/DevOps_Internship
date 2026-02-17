@@ -66,5 +66,14 @@ npm install
 npm start
 docker build -t nodejs-demo-app .
 docker run -p 3000:3000 nodejs-demo-app
+exit
+
+✅ Result
+CI/CD pipeline successfully automated.
+Docker image builds and pushes automatically on every push to main.
+Deployment process is fully automated.
+
+📸 Proof
+
 
 
