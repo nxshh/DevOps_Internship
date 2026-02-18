@@ -1,4 +1,4 @@
-# Task-03: Infrastructure as Code (IaC) using Terraform
+# Task-03: IaC using Terraform
 
 ## 📌Objective
 Provision a local Docker container using Terraform to understand Infrastructure as Code (IaC) concepts.
@@ -21,7 +21,7 @@ This project uses the Docker provider in Terraform to:
 
 ---
 
-## Terraform Workflow
+## ⚙️Terraform Workflow
 
 ### 1. Initialize Terraform
 terraform init
@@ -52,15 +52,15 @@ Removes all resources created by Terraform.
 
 ---
 
-## Files Included
+### Files Included
 main.tf — Terraform configuration file, README.md — Task documentation
 
-## Terraform Lifecycle Summary
+### Terraform Lifecycle Summary
 terraform init, terraform plan, terraform apply, terraform state list, terraform destroy
 
 ---
 
-## Screenshots
+## 📷Screenshots
 
 ### terraform init: 
 <img width="1014" height="354" alt="image" src="https://github.com/user-attachments/assets/00acb057-451a-4cdf-8454-10b0c4279578" />
