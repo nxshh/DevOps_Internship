@@ -1,22 +1,25 @@
-## DevOps Internship Portfolio
+# DevOps Internship Portfolio
 
-This repository contains tasks completed during my DevOps internship.
-Each task demonstrates practical DevOps concepts such as CI/CD automation, containerization, and deployment workflows using industry tools.
+This repository contains tasks completed during my DevOps internship.  
+Each task demonstrates practical DevOps concepts such as CI/CD automation, containerization, and Infrastructure as Code using industry-standard tools.
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Technologies & Tools Used
 - Git & GitHub
 - GitHub Actions
+- Jenkins
 - Docker
+- Terraform
 - Node.js
-- CI/CD Automation
+- CI/CD Pipelines
+- Infrastructure as Code (IaC)
 
 ---
 
 ## 📌 Completed Tasks
 - ✅ Task-01: CI/CD Pipeline using GitHub Actions
 - ✅ Task-02: Jenkins Pipeline for CI/CD
-- ✅ Task-03: IaC using Terraform
+- ✅ Task-03: Infrastructure as Code (IaC) using Terraform
   
 More tasks will be added as the internship progresses.
