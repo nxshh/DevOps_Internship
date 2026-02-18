@@ -1,7 +1,7 @@
 # Task-01: CI/CD Pipeline using GitHub Actions
 
 # 📌 Objective
-Automate build and deployment of a Node.js web app using a CI/CD pipeline with GitHub Actions and Docker.
+Automate, build, test and deploy a Node.js web app using a CI/CD pipeline with GitHub Actions and Docker.
 
 ---
 
@@ -32,23 +32,26 @@ Automate build and deployment of a Node.js web app using a CI/CD pipeline with G
 
 ---
 
-# Docker Image
-
+### Docker Image
 nxshh/nodejs-demo-app
 
----
-
-# GitHub Secrets
-
-DOCKER_USERNAME
-DOCKER_PASSWORD (Docker Hub Access Token)
+### GitHub Secrets
+- DOCKER_USERNAME
+- DOCKER_PASSWORD (Docker Hub Access Token)
 
 ---
 
 # Run Locally
 
-```bash
 npm install
 npm start
 docker build -t nodejs-demo-app .
 docker run -p 3000:3000 nodejs-demo-app
+
+---
+
+### Outcome
+
+- Implemented automated CI/CD pipeline using GitHub Actions.
+- Automated Docker image build and deployment.
+- Understood workflow automation using triggers, jobs, and secrets.
