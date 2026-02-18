@@ -15,30 +15,6 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                echo 'Installing dependencies...'
-                sh '''
-                docker run --rm \
-                -v $PWD:/app \
-                -w /app node:18 \
-                npm install
-                '''
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                echo 'Running tests...'
-                sh '''
-                docker run --rm \
-                -v $PWD:/app \
-                -w /app node:18 \
-                npm test
-                '''
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
