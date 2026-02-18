@@ -1,11 +1,11 @@
 # Task-01: CI/CD Pipeline using GitHub Actions
 
-# 📌 Objective
+## 📌 Objective
 Automate, build, test and deploy a Node.js web app using a CI/CD pipeline with GitHub Actions and Docker.
 
 ---
 
-# 🛠 Tools Used
+## 🛠 Tools Used
 - Node.js
 - Docker
 - GitHub
@@ -14,7 +14,7 @@ Automate, build, test and deploy a Node.js web app using a CI/CD pipeline with G
 
 ---
 
-# ⚙️ CI/CD Workflow
+## ⚙️ CI/CD Workflow
 
 **Workflow file:** `.github/workflows/main.yml`
 
@@ -41,16 +41,15 @@ nxshh/nodejs-demo-app
 
 ---
 
-# Run Locally
-
-npm install
-npm start
-docker build -t nodejs-demo-app .
-docker run -p 3000:3000 nodejs-demo-app
+## Run Locally
+- npm install
+- npm start
+- docker build -t nodejs-demo-app .
+- docker run -p 3000:3000 nodejs-demo-app
 
 ---
 
-### Outcome
+## Outcome
 
 - Implemented automated CI/CD pipeline using GitHub Actions.
 - Automated Docker image build and deployment.
