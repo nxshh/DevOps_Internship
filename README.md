@@ -23,5 +23,7 @@ Each task demonstrates practical DevOps concepts such as CI/CD automation, conta
 - ✅ Task-02: Jenkins Pipeline for CI/CD
 - ✅ Task-03: Infrastructure as Code (IaC) using Terraform
 - ✅ Task-04: Version-Controlled DevOps Project with Git
+- ✅ Task-05: Kubernetes with Minikube
+- ✅ Task-06: Hosting Static Website with GitHub Pages
 
 More tasks will be added as the internship progresses.
