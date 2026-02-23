@@ -1,29 +1,52 @@
-# DevOps Internship Portfolio
+# 🚀 DevOps Internship Portfolio
 
-This repository contains tasks completed during my DevOps internship.  
-Each task demonstrates practical DevOps concepts such as CI/CD automation, containerization, Infrastructure as Code, and version control workflows using industry-standard tools.
+This repository contains 6 hands-on DevOps tasks covering CI/CD automation, Infrastructure as Code, containerization, Kubernetes orchestration, version control workflows, and static deployment.
 
----
-
-## 🛠 Technologies & Tools Used
-- Git & GitHub
-- GitHub Actions
-- Jenkins
-- Docker
-- Terraform
-- Node.js
-- CI/CD Pipelines
-- Infrastructure as Code (IaC)
-- Version Control Workflows
+Each task is implemented and tested locally to simulate real-world DevOps practices.
 
 ---
 
-## 📌 Completed Tasks
-- ✅ Task-01: CI/CD Pipeline using GitHub Actions
-- ✅ Task-02: Jenkins Pipeline for CI/CD
-- ✅ Task-03: Infrastructure as Code (IaC) using Terraform
-- ✅ Task-04: Version-Controlled DevOps Project with Git
-- ✅ Task-05: Kubernetes with Minikube
-- ✅ Task-06: Hosting Static Website with GitHub Pages
+## 📂 Project Structure
 
-More tasks will be added as the internship progresses.
+### 1️⃣ GitHub Actions CI/CD
+Automated test → build → Docker image push for a Node.js application using GitHub Actions.  
+Triggered on push to `main` with a complete CI/CD workflow.
+
+### 2️⃣ Jenkins CI/CD Pipeline
+Built a Jenkins pipeline with structured stages: Build, Test, and Deploy using Docker integration.
+
+### 3️⃣ Terraform Infrastructure as Code
+Provisioned a Docker container using Terraform (`init`, `plan`, `apply`, `destroy`) and managed state configuration.
+
+### 4️⃣ Git Version-Controlled DevOps Project
+Implemented structured branching (main, dev, feature), pull requests, tags, and proper commit practices.
+
+### 5️⃣ Kubernetes with Minikube
+Deployed Nginx using Deployment and NodePort Service, scaled replicas, and performed pod inspection & debugging using kubectl.
+
+### 6️⃣ GitHub Pages Deployment
+Hosted and customized a static HTML website using GitHub Pages.
+
+---
+
+## 🛠 Tech Stack
+
+Git • GitHub • GitHub Actions • Jenkins • Docker • Terraform • Kubernetes (Minikube, kubectl) • Node.js • Linux
+
+---
+
+## 🎯 Key Skills Demonstrated
+
+- CI/CD pipeline automation  
+- Docker image build & push workflows  
+- Infrastructure provisioning using IaC  
+- Kubernetes deployment & scaling  
+- Git branching & collaboration workflows  
+- Static site hosting  
+
+---
+
+## 📌 Outcome
+
+This repository represents practical DevOps implementation across the complete pipeline — from code commit to deployment and infrastructure management.
+All tasks are fully functional and verified.
