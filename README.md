@@ -1,28 +1,30 @@
 # 🚀 DevOps Internship Portfolio
 
-This repository contains 6 hands-on DevOps tasks covering CI/CD automation, Infrastructure as Code, containerization, Kubernetes orchestration, version control workflows, and static deployment.
+This repository documents hands-on DevOps tasks completed as part of my ongoing internship.
+It covers CI/CD automation, Infrastructure as Code, containerization, Kubernetes orchestration, version control workflows, and static deployments.
 
-Each task is implemented and tested locally to simulate real-world DevOps practices.
+Each task is implemented and tested locally to simulate real-world DevOps practices. 
+New tasks will continue to be added as the internship progresses.
 
 ---
 
-## 📂 Project Structure
+# 📂 Completed Tasks
 
 ### 1️⃣ GitHub Actions CI/CD
-Automated test → build → Docker image push for a Node.js application using GitHub Actions.  
+Automated test → build → Docker image push for a Node.js application.  
 Triggered on push to `main` with a complete CI/CD workflow.
 
 ### 2️⃣ Jenkins CI/CD Pipeline
-Built a Jenkins pipeline with structured stages: Build, Test, and Deploy using Docker integration.
+Implemented a Jenkins pipeline with structured stages: Build, Test, and Deploy using Docker.
 
 ### 3️⃣ Terraform Infrastructure as Code
-Provisioned a Docker container using Terraform (`init`, `plan`, `apply`, `destroy`) and managed state configuration.
+Provisioned a Docker container using Terraform (`init`, `plan`, `apply`, `destroy`) with state management.
 
 ### 4️⃣ Git Version-Controlled DevOps Project
-Implemented structured branching (main, dev, feature), pull requests, tags, and proper commit practices.
+Applied structured branching (main, dev, feature), pull requests, tagging, and clean commit practices.
 
 ### 5️⃣ Kubernetes with Minikube
-Deployed Nginx using Deployment and NodePort Service, scaled replicas, and performed pod inspection & debugging using kubectl.
+Deployed Nginx using Deployment and NodePort Service, scaled replicas, and debugged pods using kubectl.
 
 ### 6️⃣ GitHub Pages Deployment
 Hosted and customized a static HTML website using GitHub Pages.
@@ -35,18 +37,18 @@ Git • GitHub • GitHub Actions • Jenkins • Docker • Terraform • Kuber
 
 ---
 
-## 🎯 Key Skills Demonstrated
+## 🎯 Skills Demonstrated
 
 - CI/CD pipeline automation  
-- Docker image build & push workflows  
-- Infrastructure provisioning using IaC  
-- Kubernetes deployment & scaling  
+- Docker build & push workflows  
+- Infrastructure provisioning (IaC)  
+- Kubernetes deployments & scaling  
 - Git branching & collaboration workflows  
-- Static site hosting  
+- Static site deployment  
 
 ---
 
 ## 📌 Outcome
 
 This repository represents practical DevOps implementation across the complete pipeline — from code commit to deployment and infrastructure management.
-All tasks are fully functional and verified.
+All tasks are fully functional and verified. Additional DevOps tasks will be added as the internship continues.
