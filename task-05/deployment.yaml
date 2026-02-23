@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-app
+  name: nginx-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodejs-app
+      app: nginx
   template:
     metadata:
       labels:
-        app: nodejs-app
+        app: nginx
     spec:
       containers:
-      - name: nodejs-app
-        image: nxshh/nodejs-demo-app:latest
-        ports:
-        - containerPort: 3000
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
