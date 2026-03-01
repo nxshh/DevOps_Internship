@@ -1,4 +1,4 @@
-# TASK 5: Build a Kubernetes Cluster Locally with Minikube
+# Task-05: Build a Kubernetes Cluster Locally with Minikube
 
 ## 📌 Objective
 Deploy and manage applications locally using Kubernetes with Minikube.
