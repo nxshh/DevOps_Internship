@@ -1,4 +1,4 @@
-# 07 - Netdata Docker Monitor
+# Task-07: Netdata Docker Monitor
 
 ## 📌 Objective
 Install and run Netdata using Docker to monitor real-time system and container performance metrics.
@@ -61,3 +61,4 @@ Confirmed monitoring agent running without critical errors.
 
 ### Screenshot showing CPU spike during stress test
 <img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/a7f5f3a7-edf9-4acd-b11e-716a38467833" />
+
